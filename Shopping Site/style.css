@@ -6,7 +6,9 @@
     margin: 0;
     padding: 0;
 }
-
+*:focus {
+    outline: none;
+}
 .header{
   
    background-image: url('images/back.png');
@@ -131,7 +133,7 @@
 }
 
 .greenbutton{
-    margin: 20px;
+    margin: 20px 0px;
     border-radius: 10px;
     padding: 5px 10px;
     color:white;
@@ -185,4 +187,259 @@
     color: white;
     border-radius: 50%;
     background-color: rgb(70, 123, 70);
+}
+.foodcard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    border-radius: 15px;
+    background-color: rgb(239, 242, 244);
+    width: 270px;
+    height: 320px;
+}
+.foodimg{
+    height: 210px;
+}
+.food-text{
+    margin-top: 30px;
+    padding: 0px 20px;
+    line-height: 30px;
+    text-align: left;
+}
+.innerfood{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.foodrating{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: antiquewhite;
+    height: 50px;
+    width: 95px;
+    border-radius: 10px;
+    background-color: rgb(245, 104, 104);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* poster */
+.posters{
+    margin-top: 100px;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+}
+.posters>div{
+    position: relative;
+    width:50%;
+}
+#postermap{
+    position: absolute;
+    top: 280px;
+    left: 530px;
+}
+#square{
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: lightgrey;
+}
+#semi{
+    position: absolute;
+    right: -50px;
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    background-color: rgb(242, 205, 211);
+}
+
+.poster-right{
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-top: 100px;
+}
+.posterbutt{
+    border-radius: 10px;
+    padding: 5px 10px;
+    color:white;
+    width: 50px;
+    background-color: rgb(61, 122, 61);
+}
+.postertxt{
+    text-align: left;
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.intpostxt2{
+    font-size: 15px;
+    width:500px;
+    color: grey;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+#postsearch{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+}
+
+.srch{
+    height: 40px;
+    width: 260px;
+    border: solid lightgray 1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0px 10px;
+    margin-right: 30px;
+
+}
+.redbutton{
+    height: 20px;
+    background-color: rgb(245, 104, 104);
+    padding: 10px;
+    color:white;
+    border-radius: 10px;
+}
+.menu{
+    padding-top: 100px;
+    width: 75%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+}
+#menutxt{
+    display: flex;
+    justify-content: space-between;
+    color: grey;
+}
+#menucards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.mcard{
+    position: relative;
+    display: flex;
+    margin-top: 40px;
+    border-radius: 20px;
+    background-color: lightgray;
+    flex-direction: row;
+    height: 208px;
+    width: 550px;
+}
+.mcardtxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+.mtxt{
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: bold;
+}
+.mcardprice{
+    display: flex;
+    width: 240px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#coffee{
+    position: absolute;
+    top:330px;
+    left: 100px;
+}
+.iphonepost{
+    display: flex;
+    width: 100%;
+    height: 370px;
+    background-color: rgb(248, 119, 72);
+}
+
+.iph{
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+#iphtxt{
+    display: inline-block;
+    color: beige;
+    font-size: 30px;
+    text-align: left;
+}
+#iphone{
+    position: absolute;
+    top: 70px;
+}
+#dots2{
+    position: absolute;
+    top:150px;
+    right: 100px;
+}
+#dots1{
+    position: absolute;
+    top:80px;
+    left: 100px;
+}
+
+/* footer */
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 330px;
+    background-color: rgb(39, 38, 38);
+}
+#footerupper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 50%;
+}
+.footertxt{
+    display: inline-block;
+    padding-top: 20px;
+    width: 300px;
+    color:white;
+}
+#menu{
+    text-align: start;
+    height: 80px;
+}
+.trow{
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    width: 250px;
+}
+#footerlower{
+    width: 85%;
+    height: 20%;
+    text-align: right;
+    color: antiquewhite;
+}
+#footerlower span{
+    padding-left: 30px;
 }
